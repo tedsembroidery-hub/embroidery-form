@@ -1,0 +1,108 @@
+<!-- Grandmother’s Touch Embroidery Order Form -->
+<style>
+  .gte-form {max-width:680px;margin:auto;font-family:Segoe UI,Roboto,Helvetica,Arial,sans-serif;}
+  .gte-form fieldset {border:1px solid #d0d0d0;border-radius:8px;padding:16px;margin-bottom:16px;}
+  .gte-form legend {font-weight:600;color:#444;}
+  .gte-form label {display:block;margin:10px 0 4px;font-size:14px;}
+  .gte-form input, .gte-form select, .gte-form textarea {width:100%;padding:8px;font-size:14px;border:1px solid #bbb;border-radius:4px;}
+  .gte-form .inline {display:flex;gap:12px;}
+  .gte-form .inline > div {flex:1;}
+  .gte-form .note {font-size:12px;color:#666;margin-top:4px;}
+  .gte-form button {background:#c2185b;color:#fff;border:none;padding:12px 24px;border-radius:4px;font-size:16px;cursor:pointer;}
+  .gte-form button:hover {background:#9c1448;}
+</style>
+
+<form class="gte-form"
+      action="https://script.google.com/macros/s/AKfycbyvD8e1kbEYt8vZAlFW27mT9-pyycbYsbXhVc0kTbzrFHB9Au0RGzUObKjcQVKrv-jK/exec"
+      method="post"
+      enctype="multipart/form-data">
+
+<fieldset>
+  <legend>Contact & Delivery</legend>
+  <div class="inline">
+    <div>
+      <label>First name *</label>
+      <input name="entry.123456789" required>
+    </div>
+    <div>
+      <label>Last name *</label>
+      <input name="entry.987654321" required>
+    </div>
+  </div>
+  <label>Email *</label>
+  <input type="email" name="entry.111111111" required>
+  <label>Phone (for quick questions)</label>
+  <input type="tel" name="entry.222222222">
+  <label>Shipping address *</label>
+  <textarea name="entry.333333333" rows="2" required></textarea>
+</fieldset>
+
+<fieldset>
+  <legend>Item(s) to embroider</legend>
+  <label>Garment / product type *</label>
+  <select name="entry.444444444" required>
+    <option value="">Choose one</option>
+    <option>Apparel – hoodie</option>
+    <option>Apparel – sweatshirt</option>
+    <option>Apparel – polo</option>
+    <option>Apparel – denim jacket</option>
+    <option>Apparel – beanie</option>
+    <option>Baby & kids – onesie</option>
+    <option>Baby & kids – bib</option>
+    <option>Baby & kids – blanket</option>
+    <option>Accessories – tote bag</option>    
+    <option>Accessories – patch (stand-alone)</option>
+    <option>Home – towel</option>
+    <option>Home – pillow cover</option>
+    <option>Home – apron</option>
+    <option>Other (describe below)</option>
+  </select>
+  <label>Quantity *</label>
+  <input type="number" name="entry.555555555" min="1" required>
+  <label>Size breakdown (if apparel)</label>
+  <textarea name="entry.666666666" placeholder="XS-2, S-5, M-8…"></textarea>
+</fieldset>
+
+<fieldset>
+  <legend>Artwork & Digitizing</legend>
+  <label>Upload your logo (vector or 300-dpi JPG/PNG) *</label>
+  <input type="file" name="file" required>
+  <div class="note">Prefer vector (.ai, .eps, .svg).<br>
+  If this is your first time ordering this logo, a ONE-TIME digitizing fee applies—ask for a quote within 24 h.</div>
+  <label>Placement *</label>
+  <select name="entry.777777777" required>
+    <option value="">Pick placement</option>
+    <option>Left chest</option>
+    <option>Full front</option>
+    <option>Full back</option>
+    <option>Right chest</option>
+    <option>Left sleeve</option>
+    <option>Right sleeve</option>
+    <option>Back yoke</option>
+    <option>3D puff</option>
+    <option>Patch (merrow border)</option>
+    <option>Other (note below)</option>
+  </select>
+  <label>Thread colors / notes</label>
+  <textarea name="entry.888888888" placeholder="Red, navy, white…"></textarea>
+</fieldset>
+
+<fieldset>
+  <legend>Extra services</legend>
+  <label><input type="checkbox" name="entry.999999999" value="3D Puff"> 3D Puff foam (+$2 ea)</label>
+  <label><input type="checkbox" name="entry.999999999" value="Metallic thread"> Metallic thread (+15%)</label>
+  <label><input type="checkbox" name="entry.999999999" value="Rush 48h"> Rush 48-hour stitch (+30%)</label>
+  <label>Need-by date</label>
+  <input type="date" name="entry.1010101010">
+</fieldset>
+
+<fieldset>
+  <legend>Almost done</legend>
+  <label>Questions or special instructions</label>
+  <textarea name="entry.1212121212" rows="3"></textarea>
+  <div class="note">I’ll email a firm quote within 24 h. 50% deposit required to schedule stitching.</div>
+</fieldset>
+
+<button type="submit">Send my order</button>
+</form>
+
